@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ТГК-1 — крупнейший производитель электрической и тепловой энергии на Северо-Западе России. 40 ГЭС, 12 ТЭЦ, ~7 ГВт мощности.">
+  <meta name="keywords" content="ТГК-1, энергия, теплоснабжение, электроэнергия, Санкт-Петербург, вакансии, подключение">
+  <meta name="author" content="ПАО ТГК-1">
+  <meta name="theme-color" content="#1a56db">
+  <meta property="og:title" content="ТГК-1 — Энергия Северо-Запада">
+  <meta property="og:description" content="Крупнейший производитель электрической и тепловой энергии на Северо-Западе России.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <title>ТГК-1 — Энергия Северо-Запада</title>
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="header__logo" aria-label="ТГК-1 — На главную">
+        <span class="header__logo-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </span>
+        <span class="header__logo-text">
+          <span class="header__logo-title">TGK-1</span>
+          <span class="header__logo-subtitle">Energy of the Northwest</span>
+        </span>
+      </a>
+
+      <nav class="header__nav" id="main-nav" aria-label="Main navigation">
+        <ul class="header__nav-list">
+          <li><a href="#about" class="header__nav-link">About</a></li>
+          <li><a href="#services" class="header__nav-link">Services</a></li>
+          <li><a href="#careers" class="header__nav-link">Careers</a></li>
+          <li><a href="#contact" class="header__nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button
+        class="header__menu-toggle"
+        id="menu-toggle"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg class="header__menu-icon header__menu-icon--open" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        <svg class="header__menu-icon header__menu-icon--close" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <nav class="header__mobile-menu" id="mobile-menu" aria-label="Mobile navigation" hidden>
+      <ul class="header__mobile-list">
+        <li><a href="#about" class="header__mobile-link">About</a></li>
+        <li><a href="#services" class="header__mobile-link">Services</a></li>
+        <li><a href="#careers" class="header__mobile-link">Careers</a></li>
+        <li><a href="#contact" class="header__mobile-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <span class="badge badge--accent hero__badge">Since 1897 — powering the Northwest of Russia</span>
+
+        <h1 id="hero-heading" class="hero__heading">
+          Energy that drives the region
+        </h1>
+
+        <p class="hero__description">
+          The largest producer of electricity and heat in the Northwest.
+          40 hydroelectric and 12 thermal power plants ensure reliable energy supply for millions.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#how-to-connect" class="btn btn--primary btn--lg">
+            Connect services
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+          </a>
+          <a href="#careers" class="btn btn--outline btn--lg">
+            Careers
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>
+          </a>
+        </div>
+
+        <div class="stats" role="list" aria-label="Key figures">
+          <div class="stats__item" role="listitem">
+            <span class="stats__value">40</span>
+            <span class="stats__label">Hydroelectric stations</span>
+          </div>
+          <div class="stats__item" role="listitem">
+            <span class="stats__value">12</span>
+            <span class="stats__label">Thermal power plants</span>
+          </div>
+          <div class="stats__item" role="listitem">
+            <span class="stats__value">~7</span>
+            <span class="stats__label">GW capacity</span>
+          </div>
+          <div class="stats__item" role="listitem">
+            <span class="stats__value">50%</span>
+            <span class="stats__label">Market share in SPb</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section section--muted" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section__header">
+          <span class="badge">About</span>
+          <h2 id="about-heading" class="section__title">Who is TGK-1</h2>
+          <p class="section__subtitle">
+            We are Territorial Generating Company No. 1, part of Russia's largest energy holding
+          </p>
+        </div>
+
+        <div class="about__cards">
+          <article class="card card--bordered">
+            <div class="card__icon card__icon--primary" aria-hidden="true">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/></svg>
+            </div>
+            <h3 class="card__title">What we do</h3>
+            <p class="card__text">
+              We produce electricity and heat for residents and businesses of Saint Petersburg,
+              the Republic of Karelia, and the Murmansk region. Our stations operate around the clock,
+              providing uninterrupted power to more than 3 million residents.
+            </p>
+          </article>
+
+          <article class="card card--bordered">
+            <div class="card__icon card__icon--accent" aria-hidden="true">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
+            </div>
+            <h3 class="card__title">Our mission</h3>
+            <p class="card__text">
+              To ensure reliable, affordable, and environmentally friendly energy supply for the Northwest region.
+              We invest in equipment modernization, develop renewable energy,
+              and create comfortable conditions for our employees.
+            </p>
+          </article>
+        </div>
+
+        <div class="card card--highlight about__importance">
+          <div class="about__importance-header">
+            <span class="about__importance-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></svg>
+            </span>
+            <h3 class="about__importance-title">Why we matter to the region</h3>
+          </div>
+          <ul class="checklist checklist--2col">
+            <li class="checklist__item">Provide 50% of heat in Saint Petersburg</li>
+            <li class="checklist__item">100% heat supply in Petrozavodsk, Apatity, Kirovsk</li>
+            <li class="checklist__item">40% energy from renewable sources (hydroelectric)</li>
+            <li class="checklist__item">Among the top 10 largest generating companies in Russia</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="section__header">
+          <span class="badge">Our services</span>
+          <h2 id="services-heading" class="section__title">What we offer</h2>
+          <p class="section__subtitle">Full range of energy services for individuals and businesses</p>
+        </div>
+
+        <div class="services__grid">
+          <article class="card card--hover">
+            <div class="card__icon-wrap card__icon-wrap--primary" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
+            </div>
+            <h3 class="card__title">Electricity</h3>
+            <p class="card__text">
+              Power generation at 40 hydroelectric and 12 thermal plants with a total capacity of ~6,900 MW.
+              Reliable electricity supply for industry and residents.
+            </p>
+            <ul class="checklist">
+              <li class="checklist__item">24/7 dispatching</li>
+              <li class="checklist__item">Eco-friendly hydro generation (40%)</li>
+              <li class="checklist__item">Next-generation gas thermal plants</li>
+            </ul>
+          </article>
+
+          <article class="card card--hover">
+            <div class="card__icon-wrap card__icon-wrap--accent" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
+            </div>
+            <h3 class="card__title">Heat supply</h3>
+            <p class="card__text">
+              Heating and hot water for millions. 50% of the heat market in Saint Petersburg,
+              72% in Murmansk, 100% in Petrozavodsk.
+            </p>
+            <ul class="checklist">
+              <li class="checklist__item">Uninterrupted heat delivery</li>
+              <li class="checklist__item">Modern infrastructure</li>
+              <li class="checklist__item">Combined generation</li>
+            </ul>
+          </article>
+
+          <article class="card card--hover">
+            <div class="card__icon-wrap card__icon-wrap--secondary" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M11 9h4a2 2 0 0 1 2 2v4"/><path d="M7 15h4a2 2 0 0 0 2-2V9"/></svg>
+            </div>
+            <h3 class="card__title">Grid connection</h3>
+            <p class="card__text">
+              Connecting new consumers to electric and heat networks.
+              Full support from application to commissioning.
+            </p>
+            <ul class="checklist">
+              <li class="checklist__item">Expert consultation</li>
+              <li class="checklist__item">Transparent conditions</li>
+              <li class="checklist__item">Fast connection</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="cta-banner">
+          <div class="cta-banner__content">
+            <h3 class="cta-banner__title">Want to connect to our services?</h3>
+            <p class="cta-banner__text">Leave a request and our specialists will contact you for a consultation</p>
+          </div>
+          <a href="#how-to-connect" class="btn btn--secondary btn--lg cta-banner__btn">
+            Connect
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Careers Section -->
+    <section id="careers" class="section section--muted" aria-labelledby="careers-heading">
+      <div class="container">
+        <div class="section__header">
+          <span class="badge">Careers</span>
+          <h2 id="careers-heading" class="section__title">Work at TGK-1</h2>
+          <p class="section__subtitle">
+            Join our team of professionals. Stable employment, fair pay, development, and career growth
+          </p>
+        </div>
+
+        <!-- Benefits -->
+        <div class="benefits__grid">
+          <article class="card">
+            <div class="card__icon card__icon--primary" aria-hidden="true">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="2" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <h3 class="card__title">Fair compensation</h3>
+            <p class="card__text">
+              Salary from 60,000 to 110,000 RUB depending on the role. Official salary,
+              bonuses, 13th-month pay, seniority bonuses.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon card__icon--primary" aria-hidden="true">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
+            </div>
+            <h3 class="card__title">Full benefits package</h3>
+            <p class="card__text">
+              Private health insurance for employees and family, resort treatment, financial assistance,
+              meal and transport compensation.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon card__icon--primary" aria-hidden="true">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+            </div>
+            <h3 class="card__title">Training & growth</h3>
+            <p class="card__text">
+              Free training and professional development, mentoring,
+              corporate university, career advancement.
+            </p>
+          </article>
+        </div>
+
+        <!-- Vacancies -->
+        <div class="vacancies">
+          <h3 class="vacancies__title">Popular vacancies</h3>
+          <div class="vacancies__grid">
+            <article class="vacancy-card">
+              <div class="vacancy-card__header">
+                <div>
+                  <h4 class="vacancy-card__title">Turbine operator</h4>
+                  <p class="vacancy-card__location">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                    Saint Petersburg
+                  </p>
+                </div>
+                <span class="badge badge--salary">80,000 - 110,000 RUB</span>
+              </div>
+              <div class="vacancy-card__meta">
+                <span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  Full-time
+                </span>
+                <span aria-hidden="true">&bull;</span>
+                <span>Official employment</span>
+              </div>
+            </article>
+
+            <article class="vacancy-card">
+              <div class="vacancy-card__header">
+                <div>
+                  <h4 class="vacancy-card__title">Instrumentation technician</h4>
+                  <p class="vacancy-card__location">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                    Murmansk
+                  </p>
+                </div>
+                <span class="badge badge--salary">70,000 - 95,000 RUB</span>
+              </div>
+              <div class="vacancy-card__meta">
+                <span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  Full-time
+                </span>
+                <span aria-hidden="true">&bull;</span>
+                <span>Official employment</span>
+              </div>
+            </article>
+
+            <article class="vacancy-card">
+              <div class="vacancy-card__header">
+                <div>
+                  <h4 class="vacancy-card__title">Electrician</h4>
+                  <p class="vacancy-card__location">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                    Petrozavodsk
+                  </p>
+                </div>
+                <span class="badge badge--salary">65,000 - 90,000 RUB</span>
+              </div>
+              <div class="vacancy-card__meta">
+                <span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  Full-time
+                </span>
+                <span aria-hidden="true">&bull;</span>
+                <span>Official employment</span>
+              </div>
+            </article>
+
+            <article class="vacancy-card">
+              <div class="vacancy-card__header">
+                <div>
+                  <h4 class="vacancy-card__title">Boiler room operator</h4>
+                  <p class="vacancy-card__location">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                    Saint Petersburg
+                  </p>
+                </div>
+                <span class="badge badge--salary">70,000 - 100,000 RUB</span>
+              </div>
+              <div class="vacancy-card__meta">
+                <span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  Full-time
+                </span>
+                <span aria-hidden="true">&bull;</span>
+                <span>Official employment</span>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- How to Apply -->
+        <div class="card steps-card">
+          <h3 class="steps-card__title">How to get a job</h3>
+          <p class="steps-card__subtitle">The TGK-1 hiring process is straightforward and transparent</p>
+          <div class="steps">
+            <div class="steps__item">
+              <span class="steps__number" aria-hidden="true">1</span>
+              <h4 class="steps__heading">Application</h4>
+              <p class="steps__text">Fill out the contact form or send your resume</p>
+            </div>
+            <div class="steps__item">
+              <span class="steps__number" aria-hidden="true">2</span>
+              <h4 class="steps__heading">Interview</h4>
+              <p class="steps__text">Meeting with HR and department manager</p>
+            </div>
+            <div class="steps__item">
+              <span class="steps__number" aria-hidden="true">3</span>
+              <h4 class="steps__heading">Medical exam</h4>
+              <p class="steps__text">Mandatory medical checkup covered by the company</p>
+            </div>
+            <div class="steps__item">
+              <span class="steps__number" aria-hidden="true">4</span>
+              <h4 class="steps__heading">Start work</h4>
+              <p class="steps__text">Paperwork and workplace onboarding</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose TGK-1 -->
+    <section class="section" aria-labelledby="benefits-heading">
+      <div class="container">
+        <div class="section__header">
+          <span class="badge">For consumers</span>
+          <h2 id="benefits-heading" class="section__title">Why choose TGK-1</h2>
+          <p class="section__subtitle">Reliability proven by time. Modern technology. Customer care.</p>
+        </div>
+
+        <div class="features__grid">
+          <article class="card">
+            <div class="card__icon card__icon--primary" aria-hidden="true">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            </div>
+            <h3 class="card__title">Reliability 24/7</h3>
+            <p class="card__text">Uninterrupted energy supply year-round. 24-hour dispatch and rapid emergency response.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon card__icon--primary" aria-hidden="true">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+            </div>
+            <h3 class="card__title">Eco-friendly</h3>
+            <p class="card__text">40% of energy from renewable sources (hydro). Modern gas plants with minimal emissions.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon card__icon--primary" aria-hidden="true">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <h3 class="card__title">Modernization</h3>
+            <p class="card__text">Continuous equipment upgrades. Digital management technologies. Efficiency improvements.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon card__icon--primary" aria-hidden="true">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3 class="card__title">Customer support</h3>
+            <p class="card__text">Personal account for service management. Mobile app. Expert consultations.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon card__icon--primary" aria-hidden="true">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/></svg>
+            </div>
+            <h3 class="card__title">Scale</h3>
+            <p class="card__text">Largest generating company in the Northwest. Part of Gazprom Energoholding.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon card__icon--primary" aria-hidden="true">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <h3 class="card__title">Transparency</h3>
+            <p class="card__text">Government-regulated tariffs. Clear connection terms. Open info on scheduled maintenance.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- How to Connect -->
+    <section id="how-to-connect" class="section section--muted" aria-labelledby="connect-heading">
+      <div class="container">
+        <div class="section__header">
+          <span class="badge">Instructions</span>
+          <h2 id="connect-heading" class="section__title">How to connect to TGK-1 services</h2>
+          <p class="section__subtitle">Simple steps to connect electricity and heat supply</p>
+        </div>
+
+        <div class="connect-steps">
+          <article class="card card--bordered card--hover">
+            <span class="connect-steps__number" aria-hidden="true">1</span>
+            <h3 class="card__title">Prepare documents</h3>
+            <ul class="checklist">
+              <li class="checklist__item">Passport or company documents</li>
+              <li class="checklist__item">Property ownership documents</li>
+              <li class="checklist__item">Site location plan</li>
+            </ul>
+          </article>
+
+          <article class="card card--bordered card--hover">
+            <span class="connect-steps__number" aria-hidden="true">2</span>
+            <h3 class="card__title">Submit application</h3>
+            <ul class="checklist">
+              <li class="checklist__item">Call +7 (812) 688-36-06</li>
+              <li class="checklist__item">Fill out the form below on the website</li>
+              <li class="checklist__item">Visit a customer service office</li>
+            </ul>
+          </article>
+
+          <article class="card card--bordered card--hover">
+            <span class="connect-steps__number" aria-hidden="true">3</span>
+            <h3 class="card__title">Get connected</h3>
+            <ul class="checklist">
+              <li class="checklist__item">Technical specifications approval</li>
+              <li class="checklist__item">Contract signing</li>
+              <li class="checklist__item">Connection and commissioning</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="card card--highlight info-card">
+          <h3 class="info-card__title">Important information</h3>
+          <div class="info-card__grid">
+            <div>
+              <h4 class="info-card__subtitle">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
+                Electricity connection
+              </h4>
+              <ul class="info-card__list">
+                <li>Application review: 15 days</li>
+                <li>Connection timeline: from 4 months</li>
+                <li>Preferential terms for up to 15 kW</li>
+                <li>Online application status tracking</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="info-card__subtitle">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
+                Heat supply connection
+              </h4>
+              <ul class="info-card__list">
+                <li>Application review: 30 days</li>
+                <li>Connection timeline: from 6 months</li>
+                <li>Heat supply project required</li>
+                <li>Free engineer consultation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="section section--gradient" aria-labelledby="contact-heading">
+      <div class="container container--narrow">
+        <div class="section__header">
+          <span class="badge">Feedback</span>
+          <h2 id="contact-heading" class="section__title">Contact us</h2>
+          <p class="section__subtitle">Have questions? Want to work at TGK-1 or connect to our services? Write to us!</p>
+        </div>
+
+        <div class="card card--bordered contact-form-card">
+          <form id="contact-form" class="form" novalidate>
+            <div class="form__row">
+              <div class="form__group">
+                <label for="form-name" class="form__label">Your name *</label>
+                <input
+                  type="text"
+                  id="form-name"
+                  name="name"
+                  class="form__input"
+                  placeholder="Ivan Ivanov"
+                  required
+                  autocomplete="name"
+                >
+                <span class="form__error" id="name-error" aria-live="polite"></span>
+              </div>
+              <div class="form__group">
+                <label for="form-email" class="form__label">Email *</label>
+                <input
+                  type="email"
+                  id="form-email"
+                  name="email"
+                  class="form__input"
+                  placeholder="ivan@example.com"
+                  required
+                  autocomplete="email"
+                >
+                <span class="form__error" id="email-error" aria-live="polite"></span>
+              </div>
+            </div>
+
+            <div class="form__group">
+              <label for="form-phone" class="form__label">Phone</label>
+              <input
+                type="tel"
+                id="form-phone"
+                name="phone"
+                class="form__input"
+                placeholder="+7 (999) 123-45-67"
+                autocomplete="tel"
+              >
+            </div>
+
+            <fieldset class="form__fieldset">
+              <legend class="form__label">Request type *</legend>
+              <div class="form__radio-group">
+                <label class="form__radio">
+                  <input type="radio" name="type" value="job" checked>
+                  <span>Employment</span>
+                </label>
+                <label class="form__radio">
+                  <input type="radio" name="type" value="service">
+                  <span>Service connection</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <div class="form__group">
+              <label for="form-message" class="form__label">Message *</label>
+              <textarea
+                id="form-message"
+                name="message"
+                class="form__input form__input--textarea"
+                placeholder="Tell us about yourself or describe your question..."
+                required
+                rows="5"
+              ></textarea>
+              <span class="form__error" id="message-error" aria-live="polite"></span>
+            </div>
+
+            <div id="form-status" class="form__status" hidden></div>
+
+            <button type="submit" class="btn btn--primary btn--lg btn--full" id="submit-btn">
+              <span class="btn__text">Submit request</span>
+              <span class="btn__loader" hidden aria-label="Sending...">
+                <svg class="spinner" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10" opacity="0.25"/><path d="M12 2a10 10 0 0 1 10 10" stroke-linecap="round"/></svg>
+              </span>
+            </button>
+
+            <p class="form__disclaimer">By clicking the button, you agree to the processing of personal data</p>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <div class="contact-info__card">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="contact-info__icon" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <h4 class="contact-info__title">Phone</h4>
+            <p class="contact-info__value">+7 (812) 688-36-06</p>
+            <p class="contact-info__note">Unified helpline</p>
+          </div>
+
+          <div class="contact-info__card">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="contact-info__icon" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <h4 class="contact-info__title">Email</h4>
+            <p class="contact-info__value">ivanivanit64@gmail.com</p>
+            <p class="contact-info__note">We reply within the day</p>
+          </div>
+
+          <div class="contact-info__card">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="contact-info__icon" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+            <h4 class="contact-info__title">Office</h4>
+            <p class="contact-info__value">Saint Petersburg</p>
+            <p class="contact-info__note">Mon-Fri 9:00-18:00</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#" class="footer__logo" aria-label="TGK-1 home">
+            <span class="header__logo-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </span>
+            <span class="footer__logo-text">TGK-1</span>
+          </a>
+          <p class="footer__description">
+            The largest producer of electricity and heat in the Northwest of Russia
+          </p>
+        </div>
+
+        <div class="footer__links">
+          <h4 class="footer__heading">Services</h4>
+          <ul class="footer__list">
+            <li><a href="#services">Electricity</a></li>
+            <li><a href="#services">Heat supply</a></li>
+            <li><a href="#how-to-connect">Grid connection</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__links">
+          <h4 class="footer__heading">Company</h4>
+          <ul class="footer__list">
+            <li><a href="#about">About us</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__links">
+          <h4 class="footer__heading">Contact</h4>
+          <ul class="footer__list footer__list--contact">
+            <li>Phone: +7 (812) 688-36-06</li>
+            <li>Email: ivanivanit64@gmail.com</li>
+            <li>Saint Petersburg</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2026 PJSC "TGK-1". All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
