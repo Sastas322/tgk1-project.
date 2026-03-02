@@ -47,44 +47,48 @@ async function handleContactAPI(req, res) {
 
     if (!name || !email || !message) {
       res.writeHead(400, { 'Content-Type': 'application/json' });
-      res.end(JSON.stringify({ error: 'Please fill in all required fields' }));
+      res.end(JSON.stringify({ error: 'Пожалуйста, заполните все обязательные поля' }));
       return;
     }
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
       res.writeHead(400, { 'Content-Type': 'application/json' });
-      res.end(JSON.stringify({ error: 'Invalid email format' }));
+      res.end(JSON.stringify({ error: 'Неверный формат электронной почты' }));
       return;
     }
 
+    const RECIPIENT_EMAIL = 'ivanivanit64@gmail.com';
+    const typeLabel = type === 'question' ? 'Вопрос по сайту' : 'Информация о ТГК-1';
+
     const emailContent = [
-      'New request from TGK-1 website',
+      'Новое сообщение с сайта ТГК-1',
       '',
-      `Type: ${type === 'job' ? 'Employment' : 'Service connection'}`,
-      `Name: ${name}`,
-      `Email: ${email}`,
-      `Phone: ${phone || 'Not provided'}`,
+      `Тема: ${typeLabel}`,
+      `Имя: ${name}`,
+      `Почта: ${email}`,
+      `Телефон: ${phone || 'Не указан'}`,
       '',
-      'Message:',
+      'Сообщение:',
       message,
       '',
       '---',
-      `Submitted: ${new Date().toLocaleString('en-US')}`,
+      `Отправлено: ${new Date().toLocaleString('ru-RU')}`,
     ].join('\n');
 
-    // In production, integrate with Resend or another email service.
-    // For now, the data is logged to the server console.
-    process.stdout.write(`\n--- New contact form submission ---\n${emailContent}\n\n`);
+    // Log to server console. The message is destined for: ivanivanit64@gmail.com
+    // To enable real email delivery, integrate with an SMTP service
+    // (e.g. Nodemailer + Gmail App Password, Resend, SendGrid).
+    process.stdout.write(`\n--- Новое сообщение (для ${RECIPIENT_EMAIL}) ---\n${emailContent}\n\n`);
 
     res.writeHead(200, { 'Content-Type': 'application/json' });
     res.end(JSON.stringify({
       success: true,
-      message: 'Your request has been sent successfully! We will contact you shortly.',
+      message: 'Ваше сообщение успешно отправлено! Я отвечу в ближайшее время.',
     }));
   } catch {
     res.writeHead(500, { 'Content-Type': 'application/json' });
-    res.end(JSON.stringify({ error: 'An error occurred while processing your request' }));
+    res.end(JSON.stringify({ error: 'Произошла ошибка при обработке вашего запроса' }));
   }
 }
 

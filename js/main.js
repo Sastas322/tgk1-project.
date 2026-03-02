@@ -1,13 +1,13 @@
 /**
- * TGK-1 — Main Application Script
- * Production-quality vanilla JavaScript with modular architecture.
+ * ТГК-1 — Основной скрипт приложения
+ * Модульная архитектура на чистом JavaScript.
  *
- * Modules:
- *  1. MobileMenu      – hamburger toggle, auto-close on link click
- *  2. SmoothScroll     – anchor link smooth scrolling with header offset
- *  3. ContactForm      – validation, async submission, status messages
- *  4. ScrollAnimations – Intersection Observer-based fade-in on scroll
- *  5. ActiveNav        – highlight current section link on scroll
+ * Модули:
+ *  1. MobileMenu      — переключение мобильного меню
+ *  2. SmoothScroll     — плавная прокрутка по якорным ссылкам
+ *  3. ContactForm      — валидация и отправка формы обратной связи
+ *  4. ScrollAnimations — анимации появления при прокрутке (IntersectionObserver)
+ *  5. ActiveNav        — подсветка текущего раздела в навигации
  */
 
 'use strict';
@@ -26,13 +26,13 @@ const MobileMenu = (() => {
   function open() {
     menu.hidden = false;
     toggle.setAttribute('aria-expanded', 'true');
-    toggle.setAttribute('aria-label', 'Close menu');
+    toggle.setAttribute('aria-label', 'Закрыть меню');
   }
 
   function close() {
     menu.hidden = true;
     toggle.setAttribute('aria-expanded', 'false');
-    toggle.setAttribute('aria-label', 'Open menu');
+    toggle.setAttribute('aria-label', 'Открыть меню');
   }
 
   function handleToggle() {
@@ -141,29 +141,29 @@ const ContactForm = (() => {
   function validate() {
     let isValid = true;
 
-    // Name
+    // Имя
     if (!fields.name.value.trim()) {
-      setFieldError('name', 'Please enter your name');
+      setFieldError('name', 'Введите ваше имя');
       isValid = false;
     } else {
       clearFieldError('name');
     }
 
-    // Email
+    // Электронная почта
     const email = fields.email.value.trim();
     if (!email) {
-      setFieldError('email', 'Please enter your email');
+      setFieldError('email', 'Введите адрес электронной почты');
       isValid = false;
     } else if (!EMAIL_REGEX.test(email)) {
-      setFieldError('email', 'Please enter a valid email');
+      setFieldError('email', 'Введите корректный адрес электронной почты');
       isValid = false;
     } else {
       clearFieldError('email');
     }
 
-    // Message
+    // Сообщение
     if (!fields.message.value.trim()) {
-      setFieldError('message', 'Please enter a message');
+      setFieldError('message', 'Введите сообщение');
       isValid = false;
     } else {
       clearFieldError('message');
@@ -176,7 +176,7 @@ const ContactForm = (() => {
 
   function setLoading(isLoading) {
     if (submitBtn) submitBtn.disabled = isLoading;
-    if (btnText) btnText.textContent = isLoading ? 'Sending...' : 'Submit request';
+    if (btnText) btnText.textContent = isLoading ? 'Отправка...' : 'Отправить сообщение';
     if (btnLoader) btnLoader.hidden = !isLoading;
   }
 
@@ -227,13 +227,13 @@ const ContactForm = (() => {
       const data = await response.json();
 
       if (response.ok) {
-        showStatus('success', data.message || 'Your request has been sent successfully!');
+        showStatus('success', data.message || 'Ваше сообщение успешно отправлено!');
         resetForm();
       } else {
-        showStatus('error', data.error || 'An error occurred. Please try again.');
+        showStatus('error', data.error || 'Произошла ошибка. Попробуйте ещё раз.');
       }
     } catch {
-      showStatus('error', 'Could not send the request. Please check your connection and try again.');
+      showStatus('error', 'Не удалось отправить сообщение. Проверьте подключение к интернету и попробуйте снова.');
     } finally {
       setLoading(false);
     }
@@ -244,7 +244,7 @@ const ContactForm = (() => {
   function addBlurValidation() {
     fields.name.addEventListener('blur', () => {
       if (!fields.name.value.trim()) {
-        setFieldError('name', 'Please enter your name');
+        setFieldError('name', 'Введите ваше имя');
       } else {
         clearFieldError('name');
       }
@@ -253,9 +253,9 @@ const ContactForm = (() => {
     fields.email.addEventListener('blur', () => {
       const val = fields.email.value.trim();
       if (!val) {
-        setFieldError('email', 'Please enter your email');
+        setFieldError('email', 'Введите адрес электронной почты');
       } else if (!EMAIL_REGEX.test(val)) {
-        setFieldError('email', 'Please enter a valid email');
+        setFieldError('email', 'Введите корректный адрес электронной почты');
       } else {
         clearFieldError('email');
       }
@@ -263,7 +263,7 @@ const ContactForm = (() => {
 
     fields.message.addEventListener('blur', () => {
       if (!fields.message.value.trim()) {
-        setFieldError('message', 'Please enter a message');
+        setFieldError('message', 'Введите сообщение');
       } else {
         clearFieldError('message');
       }
