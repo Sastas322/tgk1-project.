@@ -1,20 +1,20 @@
 /* ==========================================================================
-   TGK-1 — Production Stylesheet
-   Architecture: BEM methodology, mobile-first responsive design
+   ТГК-1 — Таблица стилей
+   Архитектура: методология БЭМ, адаптивная вёрстка (mobile-first)
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
-   1. Custom Properties (Design Tokens)
+   1. Переменные (дизайн-токены)
    -------------------------------------------------------------------------- */
 :root {
-  /* Brand colors */
+  /* Фирменные цвета */
   --color-primary: #1a56db;
   --color-primary-light: #3b82f6;
   --color-primary-dark: #1e40af;
   --color-accent: #7c3aed;
   --color-secondary: #ea580c;
 
-  /* Neutrals */
+  /* Нейтральные */
   --color-bg: #ffffff;
   --color-bg-muted: #f8fafc;
   --color-bg-card: #ffffff;
@@ -23,13 +23,13 @@
   --color-text-inverse: #ffffff;
   --color-border: #e2e8f0;
 
-  /* Feedback */
+  /* Обратная связь (статусы) */
   --color-success: #16a34a;
   --color-success-bg: rgba(22, 163, 74, 0.1);
   --color-error: #dc2626;
   --color-error-bg: rgba(220, 38, 38, 0.1);
 
-  /* Spacing scale */
+  /* Шкала отступов */
   --space-1: 0.25rem;
   --space-2: 0.5rem;
   --space-3: 0.75rem;
@@ -43,7 +43,7 @@
   --space-20: 5rem;
   --space-24: 6rem;
 
-  /* Typography */
+  /* Типографика */
   --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   --text-xs: 0.75rem;
   --text-sm: 0.875rem;
@@ -60,7 +60,7 @@
   --leading-normal: 1.5;
   --leading-relaxed: 1.625;
 
-  /* Borders & Radius */
+  /* Границы и скругления */
   --radius-sm: 0.375rem;
   --radius-md: 0.5rem;
   --radius-lg: 0.75rem;
@@ -68,18 +68,18 @@
   --radius-2xl: 1.25rem;
   --radius-full: 9999px;
 
-  /* Shadows */
+  /* Тени */
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
   --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
 
-  /* Transitions */
+  /* Переходы */
   --transition-fast: 150ms ease;
   --transition-base: 250ms ease;
   --transition-slow: 350ms ease;
 
-  /* Layout */
+  /* Макет */
   --container-max: 72rem;
   --container-narrow: 56rem;
   --header-height: 4rem;
@@ -87,7 +87,7 @@
 
 
 /* --------------------------------------------------------------------------
-   2. Reset & Base
+   2. Сброс и базовые стили
    -------------------------------------------------------------------------- */
 *,
 *::before,
@@ -154,7 +154,7 @@ fieldset {
 
 
 /* --------------------------------------------------------------------------
-   3. Layout Utilities
+   3. Утилиты макета
    -------------------------------------------------------------------------- */
 .container {
   width: 100%;
@@ -182,7 +182,7 @@ fieldset {
 
 
 /* --------------------------------------------------------------------------
-   4. Badge Component
+   4. Компонент «Бейдж»
    -------------------------------------------------------------------------- */
 .badge {
   display: inline-flex;
@@ -217,7 +217,7 @@ fieldset {
 
 
 /* --------------------------------------------------------------------------
-   5. Button Component
+   5. Компонент «Кнопка»
    -------------------------------------------------------------------------- */
 .btn {
   display: inline-flex;
@@ -301,7 +301,7 @@ fieldset {
 
 
 /* --------------------------------------------------------------------------
-   6. Card Component
+   6. Компонент «Карточка»
    -------------------------------------------------------------------------- */
 .card {
   background-color: var(--color-bg-card);
@@ -386,7 +386,7 @@ fieldset {
 
 
 /* --------------------------------------------------------------------------
-   7. Checklist Component
+   7. Компонент «Чек-лист»
    -------------------------------------------------------------------------- */
 .checklist {
   display: flex;
@@ -420,7 +420,7 @@ fieldset {
 
 
 /* --------------------------------------------------------------------------
-   8. Header
+   8. Шапка сайта
    -------------------------------------------------------------------------- */
 .header {
   position: sticky;
@@ -483,7 +483,7 @@ fieldset {
   line-height: 1;
 }
 
-/* Desktop nav */
+/* Навигация (десктоп) */
 .header__nav {
   display: none;
 }
