@@ -235,9 +235,9 @@ export default function HomePage() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-10 md:mb-16">
               <Badge variant="outline" className="mb-3 md:mb-4 text-xs md:text-sm">О компании</Badge>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4 text-balance px-2">Кто такие ТГК-1</h2>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4 text-balance px-2">Что такое ТГК-1</h2>
               <p className="text-base md:text-xl text-muted-foreground max-w-3xl mx-auto text-pretty px-2">
-                Мы — Территориальная генерирующая компания №1, часть крупнейшего энергохолдинга России
+                Это территориальная генерирующая компания №1, часть крупнейшего энергохолдинга России
               </p>
             </div>
 
@@ -245,9 +245,9 @@ export default function HomePage() {
               <Card className="border-2">
                 <CardHeader className="p-4 md:p-6">
                   <Factory className="h-10 w-10 md:h-12 md:w-12 text-primary mb-3 md:mb-4" />
-                  <CardTitle className="text-xl md:text-2xl">Что мы делаем</CardTitle>
+                  <CardTitle className="text-xl md:text-2xl">Что они делают</CardTitle>
                   <CardDescription className="text-sm md:text-base leading-relaxed">
-                    Производим электрическую и тепловую энергию для населения и предприятий Санкт-Петербурга, 
+                    Производят электрическую и тепловую энергию для населения и предприятий Санкт-Петербурга, 
                     Республики Карелия и Мурманской области. Наши станции работают круглосуточно, 
                     обеспечивая бесперебойное энергоснабжение более 3 миллионов жителей региона.
                   </CardDescription>
@@ -257,7 +257,7 @@ export default function HomePage() {
               <Card className="border-2">
                 <CardHeader className="p-4 md:p-6">
                   <Lightbulb className="h-10 w-10 md:h-12 md:w-12 text-accent mb-3 md:mb-4" />
-                  <CardTitle className="text-xl md:text-2xl">Наша миссия</CardTitle>
+                  <CardTitle className="text-xl md:text-2xl">Их миссия</CardTitle>
                   <CardDescription className="text-sm md:text-base leading-relaxed">
                     Обеспечить надежное, доступное и экологичное энергоснабжение Северо-Западного региона. 
                     Мы инвестируем в модернизацию оборудования, развиваем возобновляемую энергетику 
@@ -274,11 +274,11 @@ export default function HomePage() {
                     <Award className="h-6 w-6 md:h-8 md:w-8 text-primary" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4">Почему мы важны для региона</h3>
+                    <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4">Почему ТГК-1 важна для региона</h3>
                     <div className="grid md:grid-cols-2 gap-3 md:gap-4">
                       <div className="flex items-start gap-2 md:gap-3">
                         <Check className="h-4 w-4 md:h-5 md:w-5 text-primary mt-1 flex-shrink-0" />
-                        <span className="text-sm md:text-base text-muted-foreground">Обеспечиваем 50% тепла в Санкт-Петербурге</span>
+                        <span className="text-sm md:text-base text-muted-foreground">Обеспечивает 50% тепла в Санкт-Петербурге</span>
                       </div>
                       <div className="flex items-start gap-2 md:gap-3">
                         <Check className="h-4 w-4 md:h-5 md:w-5 text-primary mt-1 flex-shrink-0" />
@@ -290,7 +290,7 @@ export default function HomePage() {
                       </div>
                       <div className="flex items-start gap-2 md:gap-3">
                         <Check className="h-4 w-4 md:h-5 md:w-5 text-primary mt-1 flex-shrink-0" />
-                        <span className="text-sm md:text-base text-muted-foreground">Входим в первую десятку крупнейших генерирующих компаний РФ</span>
+                        <span className="text-sm md:text-base text-muted-foreground">Входит в первую десятку крупнейших генерирующих компаний РФ</span>
                       </div>
                     </div>
                   </div>
@@ -306,8 +306,8 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-10 md:mb-16">
-              <Badge variant="outline" className="mb-3 md:mb-4 text-xs md:text-sm">Наши услуги</Badge>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4 text-balance px-2">Что мы предлагаем</h2>
+              <Badge variant="outline" className="mb-3 md:mb-4 text-xs md:text-sm">Услуги</Badge>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4 text-balance px-2">Что они предлагают</h2>
               <p className="text-base md:text-xl text-muted-foreground max-w-3xl mx-auto text-pretty px-2">
                 Полный спектр энергетических услуг для физических и юридических лиц
               </p>
@@ -406,9 +406,9 @@ export default function HomePage() {
               <CardContent className="p-8">
                 <div className="flex flex-col md:flex-row items-center gap-6">
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold mb-2">Хотите подключиться к нашим услугам?</h3>
+                    <h3 className="text-2xl font-bold mb-2">Хотите подключиться к услугам?</h3>
                     <p className="text-primary-foreground/90 text-lg">
-                      Оставьте заявку, и наши специалисты свяжутся с вами для консультации
+                      Оставьте заявку, и специалисты свяжутся с вами для консультации
                     </p>
                   </div>
                   <Button size="lg" variant="secondary" className="flex-shrink-0" onClick={() => document.getElementById('how-to-connect')?.scrollIntoView({ behavior: 'smooth' })}>
@@ -789,9 +789,9 @@ export default function HomePage() {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-8 md:mb-12">
               <Badge variant="outline" className="mb-3 md:mb-4 text-xs md:text-sm">Обратная связь</Badge>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4 text-balance px-2">Свяжитесь с нами</h2>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4 text-balance px-2">Форма обратной связи</h2>
               <p className="text-base md:text-xl text-muted-foreground text-pretty px-2">
-                Есть вопросы? Хотите работать в ТГК-1 или подключиться к нашим услугам? Напишите нам!
+                Есть вопросы? Хотите работать в ТГК-1 или подключиться к услугам? Напишите!
               </p>
             </div>
 
