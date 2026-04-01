@@ -174,7 +174,7 @@ export default function HomePage() {
           <div className="max-w-4xl mx-auto text-center">
             <Badge variant="secondary" className="mb-4 md:mb-6 px-3 md:px-4 py-1.5 text-xs md:text-sm font-medium border border-primary/20 bg-primary/10 text-foreground">
               <Sparkles className="h-3 w-3 mr-1.5 md:mr-2 inline" />
-              С 1897 года снабжаем энергией Северо-Запад России
+              С 1897 года — энергия для Северо-Запада России
             </Badge>
             
             <h2 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-4 md:mb-6 text-balance bg-gradient-to-br from-foreground via-foreground/90 to-foreground/70 bg-clip-text text-transparent leading-tight px-2">
@@ -183,7 +183,7 @@ export default function HomePage() {
             
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground mb-8 md:mb-10 leading-relaxed max-w-3xl mx-auto text-pretty px-2">
               Крупнейший производитель электрической и тепловой энергии на Северо-Западе. 
-              40 ГЭС и 12 ТЭЦ обеспечивают надежное энергоснабжение миллионов людей.
+              40 ГЭС и 12 ТЭЦ обеспечивают надёжное энергоснабжение миллионов людей.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center mb-10 md:mb-16 px-4">
@@ -245,10 +245,10 @@ export default function HomePage() {
               <Card className="border-2">
                 <CardHeader className="p-4 md:p-6">
                   <Factory className="h-10 w-10 md:h-12 md:w-12 text-primary mb-3 md:mb-4" />
-                  <CardTitle className="text-xl md:text-2xl">Что они делают</CardTitle>
+                  <CardTitle className="text-xl md:text-2xl">Чем занимается компания</CardTitle>
                   <CardDescription className="text-sm md:text-base leading-relaxed">
-                    Производят электрическую и тепловую энергию для населения и предприятий Санкт-Петербурга, 
-                    Республики Карелия и Мурманской области. Наши станции работают круглосуточно, 
+                    Компания производит электрическую и тепловую энергию для населения и предприятий Санкт-Петербурга, 
+                    Республики Карелия и Мурманской области. Её станции работают круглосуточно, 
                     обеспечивая бесперебойное энергоснабжение более 3 миллионов жителей региона.
                   </CardDescription>
                 </CardHeader>
@@ -257,11 +257,11 @@ export default function HomePage() {
               <Card className="border-2">
                 <CardHeader className="p-4 md:p-6">
                   <Lightbulb className="h-10 w-10 md:h-12 md:w-12 text-accent mb-3 md:mb-4" />
-                  <CardTitle className="text-xl md:text-2xl">Их миссия</CardTitle>
+                  <CardTitle className="text-xl md:text-2xl">Миссия компании</CardTitle>
                   <CardDescription className="text-sm md:text-base leading-relaxed">
-                    Обеспечить надежное, доступное и экологичное энергоснабжение Северо-Западного региона. 
-                    Мы инвестируем в модернизацию оборудования, развиваем возобновляемую энергетику 
-                    и создаем комфортные условия для наших сотрудников.
+                    Обеспечить надёжное, доступное и экологичное энергоснабжение Северо-Западного региона. 
+                    Компания инвестирует в модернизацию оборудования, развивает возобновляемую энергетику 
+                    и создаёт комфортные условия для своих сотрудников.
                   </CardDescription>
                 </CardHeader>
               </Card>
@@ -307,7 +307,7 @@ export default function HomePage() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-10 md:mb-16">
               <Badge variant="outline" className="mb-3 md:mb-4 text-xs md:text-sm">Услуги</Badge>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4 text-balance px-2">Что они предлагают</h2>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4 text-balance px-2">Услуги компании</h2>
               <p className="text-base md:text-xl text-muted-foreground max-w-3xl mx-auto text-pretty px-2">
                 Полный спектр энергетических услуг для физических и юридических лиц
               </p>
@@ -321,8 +321,8 @@ export default function HomePage() {
                   </div>
                   <CardTitle className="text-lg md:text-xl">Электроэнергия</CardTitle>
                   <CardDescription className="leading-relaxed text-sm md:text-base">
-                    Производство электроэнергии на 40 ГЭС и 12 ТЭЦ общей мощностью ~6,900 МВт. 
-                    Надежное электроснабжение промышленных предприятий и населения.
+                    Производство электроэнергии на 40 ГЭС и 12 ТЭЦ общей мощностью около 6 900 МВт. 
+                    Надёжное электроснабжение промышленных предприятий и населения.
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="p-4 md:p-6 pt-0">
@@ -408,7 +408,7 @@ export default function HomePage() {
                   <div className="flex-1">
                     <h3 className="text-2xl font-bold mb-2">Хотите подключиться к услугам?</h3>
                     <p className="text-primary-foreground/90 text-lg">
-                      Оставьте заявку, и специалисты свяжутся с вами для консультации
+                      Оставьте заявку, и специалисты компании свяжутся с вами для консультации
                     </p>
                   </div>
                   <Button size="lg" variant="secondary" className="flex-shrink-0" onClick={() => document.getElementById('how-to-connect')?.scrollIntoView({ behavior: 'smooth' })}>
@@ -441,7 +441,7 @@ export default function HomePage() {
                   <DollarSign className="h-10 w-10 text-primary mb-3" />
                   <CardTitle>Достойная оплата</CardTitle>
                   <CardDescription className="leading-relaxed">
-                    Зарплата от 60,000 до 110,000₽ в зависимости от специальности. Белая зарплата, 
+                    Зарплата от 60 000 до 110 000 ₽ в зависимости от специальности. Белая зарплата, 
                     премии, 13-я зарплата, надбавки за выслугу лет.
                   </CardDescription>
                 </CardHeader>
@@ -475,10 +475,10 @@ export default function HomePage() {
               <h3 className="text-2xl font-bold mb-6">Популярные вакансии</h3>
               <div className="grid md:grid-cols-2 gap-4">
                 {[
-                  { title: 'Машинист турбин', salary: '80,000 - 110,000₽', location: 'Санкт-Петербург' },
-                  { title: 'Слесарь КИПиА', salary: '70,000 - 95,000₽', location: 'Мурманск' },
-                  { title: 'Электромонтер', salary: '65,000 - 90,000₽', location: 'Петрозаводск' },
-                  { title: 'Оператор котельной', salary: '70,000 - 100,000₽', location: 'Санкт-Петербург' },
+                  { title: 'Машинист турбин', salary: '80 000 – 110 000 ₽', location: 'Санкт-Петербург' },
+                  { title: 'Слесарь КИПиА', salary: '70 000 – 95 000 ₽', location: 'Мурманск' },
+                  { title: 'Электромонтёр', salary: '65 000 – 90 000 ₽', location: 'Петрозаводск' },
+                  { title: 'Оператор котельной', salary: '70 000 – 100 000 ₽', location: 'Санкт-Петербург' },
                 ].map((vacancy, idx) => (
                   <Card key={idx} className="hover:border-primary/50 transition-colors">
                     <CardContent className="p-6">
@@ -553,7 +553,7 @@ export default function HomePage() {
               <Badge variant="outline" className="mb-4">Для потребителей</Badge>
               <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance">Почему выбирают ТГК-1</h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
-                Надежность, проверенная временем. Современные технологии. Забота о клиентах.
+                Надёжность, проверенная временем. Современные технологии. Забота о клиентах.
               </p>
             </div>
 
@@ -561,7 +561,7 @@ export default function HomePage() {
               <Card>
                 <CardHeader>
                   <Target className="h-10 w-10 text-primary mb-3" />
-                  <CardTitle>Надежность 24/7</CardTitle>
+                  <CardTitle>Надёжность 24/7</CardTitle>
                   <CardDescription className="leading-relaxed">
                     Бесперебойное энергоснабжение круглый год. Круглосуточная диспетчерская служба 
                     и оперативное устранение аварий.
@@ -646,8 +646,8 @@ export default function HomePage() {
                     <div className="bg-accent/10 text-accent w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl mb-4">2</div>
                     <h4 className="font-semibold mb-2 text-lg">Согласование</h4>
                     <p className="text-muted-foreground leading-relaxed">
-                      Наши специалисты рассмотрят заявку, проведут технический осмотр, 
-                      рассчитают стоимость и подготовят договор
+Специалисты компании рассмотрят заявку, проведут технический осмотр, 
+                    рассчитают стоимость и подготовят договор
                     </p>
                   </div>
                   <div>
@@ -961,7 +961,7 @@ export default function HomePage() {
               <div>
                 <h4 className="font-semibold mb-3 md:mb-4 text-sm md:text-base">Компания</h4>
                 <ul className="space-y-1.5 md:space-y-2 text-xs md:text-sm text-muted-foreground">
-                  <li><a href="#about" className="hover:text-primary transition-colors">О нас</a></li>
+                  <li><a href="#about" className="hover:text-primary transition-colors">О компании</a></li>
                   <li><a href="#careers" className="hover:text-primary transition-colors">Карьера</a></li>
                   <li><a href="#contact" className="hover:text-primary transition-colors">Контакты</a></li>
                 </ul>
