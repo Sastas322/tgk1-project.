@@ -1,4 +1,6 @@
-import nodemailer from 'nodemailer'
+import { Resend } from 'resend'
+
+const resend = new Resend(process.env.RESEND_API_KEY)
 
 export async function POST(request: Request) {
   try {
@@ -75,58 +77,33 @@ export async function POST(request: Request) {
 </html>
     `.trim()
 
-    const textContent = `
-Новая заявка с сайта ТГК-1
-
-Тип обращения: ${typeText}
-
-Имя: ${name}
-Email: ${email}
-Телефон: ${phone || 'Не указан'}
-
-Сообщение:
-${message}
-
----
-Время отправки: ${new Date().toLocaleString('ru-RU', { timeZone: 'Europe/Moscow' })} (МСК)
-    `.trim()
-
-    // Check for Gmail credentials
-    const gmailUser = process.env.GMAIL_USER
-    const gmailAppPassword = process.env.GMAIL_APP_PASSWORD
-
-    if (!gmailUser || !gmailAppPassword) {
-      console.log('[v0] Gmail credentials not configured. Form data:')
-      console.log(textContent)
+    // Check for Resend API key
+    if (!process.env.RESEND_API_KEY) {
+      console.log('[v0] RESEND_API_KEY not configured')
       return Response.json(
-        { 
-          success: true, 
-          message: 'Заявка получена! Настройте GMAIL_USER и GMAIL_APP_PASSWORD для отправки на почту.',
-        },
-        { status: 200 }
+        { error: 'Сервис отправки не настроен' },
+        { status: 500 }
       )
     }
 
-    // Create transporter with Gmail SMTP
-    const transporter = nodemailer.createTransport({
-      service: 'gmail',
-      auth: {
-        user: gmailUser,
-        pass: gmailAppPassword,
-      },
-    })
-
-    // Send email
-    await transporter.sendMail({
-      from: `"Сайт ТГК-1" <${gmailUser}>`,
-      to: 'ivanivanit64@gmail.com',
+    // Send email via Resend
+    const { data, error } = await resend.emails.send({
+      from: 'ТГК-1 Сайт <onboarding@resend.dev>',
+      to: ['ivanivanit64@gmail.com'],
       replyTo: email,
       subject: `Новая заявка: ${typeText} — ${name}`,
-      text: textContent,
       html: htmlContent,
     })
 
-    console.log('[v0] Email успешно отправлен на ivanivanit64@gmail.com')
+    if (error) {
+      console.error('[v0] Resend ошибка:', error)
+      return Response.json(
+        { error: 'Произошла ошибка при отправке. Попробуйте позже.' },
+        { status: 500 }
+      )
+    }
+
+    console.log('[v0] Email отправлен:', data?.id)
 
     return Response.json(
       { 
@@ -137,7 +114,7 @@ ${message}
     )
 
   } catch (error) {
-    console.error('[v0] Ошибка отправки:', error)
+    console.error('[v0] Ошибка:', error)
     return Response.json(
       { error: 'Произошла ошибка при отправке заявки. Попробуйте позже.' },
       { status: 500 }
